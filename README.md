@@ -6,9 +6,9 @@ Welcome to the home of BlazeBullet
 
 ## Features
 
-  Added PWA
-  Removed ElectronNET
-  Removed Electron Shell
+    Added PWA
+    Removed ElectronNET
+    Removed Electron Shell
 
 ## Installation and Usage
 
