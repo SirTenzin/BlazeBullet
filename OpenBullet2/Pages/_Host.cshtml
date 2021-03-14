@@ -10,32 +10,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OpenBullet2</title>
     <base href="~/" />
-    
+
     <!-- CSS FILES -->
-    <!-- Radzen --><link rel="stylesheet" href="_content/Radzen.Blazor/css/default.css">
-    <!-- Blazored Modal --><link href="_content/Blazored.Modal/blazored-modal.css" rel="stylesheet" />
-    <!-- Grid Blazor --><link href="_content/GridBlazor/css/gridblazor.min.css" rel="stylesheet" />
-    <!-- Bootstrap --><link rel="stylesheet" href="css/bootstrap/darkly.min.css" />
-    <!-- Font Awesome --><link href="~/css/fontawesome.css" rel="stylesheet" />
-    <!-- Monaco Editor --><link href="monaco-editor/min/vs/editor/editor.main.css" rel="stylesheet" />
+    <!-- Radzen -->
+    <link rel="stylesheet" href="_content/Radzen.Blazor/css/default.css">
+    <!-- Blazored Modal -->
+    <link href="_content/Blazored.Modal/blazored-modal.css" rel="stylesheet" />
+    <!-- Grid Blazor -->
+    <link href="_content/GridBlazor/css/gridblazor.min.css" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap/darkly.min.css" />
+    <!-- Font Awesome -->
+    <link href="~/css/fontawesome.css" rel="stylesheet" />
+    <!-- Monaco Editor -->
+    <link href="monaco-editor/min/vs/editor/editor.main.css" rel="stylesheet" />
+
+    <!-- PWA FILES-->
+    <link href="manifest.json" rel="manifest" />
+    <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
 
     <!-- MY CSS FILES -->
     <link rel="stylesheet" href="css/site.css" />
     <link rel="stylesheet" href="css/overrides.css" />
 
     <!-- JS FILES -->
-    <!-- Asp.NET Core --><script src="_content/Microsoft.AspNetCore.Components.Web.Extensions/headManager.js"></script>
-    <!-- Grid Blazor --><script src="_content/GridBlazor/js/gridblazor.js"></script>
-    <!-- Sweet Alert --><script src="~/js/sweetalert2.9.js"></script>
-    <!-- Font Awesome --><script src="~/js/fontawesome.js"></script>
-    <!-- Radzen --><script src="_content/Radzen.Blazor/Radzen.Blazor.js"></script>
+    <!-- Asp.NET Core -->
+    <script src="_content/Microsoft.AspNetCore.Components.Web.Extensions/headManager.js"></script>
+    <!-- Grid Blazor -->
+    <script src="_content/GridBlazor/js/gridblazor.js"></script>
+    <!-- Sweet Alert -->
+    <script src="~/js/sweetalert2.9.js"></script>
+    <!-- Font Awesome -->
+    <script src="~/js/fontawesome.js"></script>
+    <!-- Radzen -->
+    <script src="_content/Radzen.Blazor/Radzen.Blazor.js"></script>
 
     <!-- MY JS FILES -->
     <script src="~/js/custom.js"></script>
     <script src="~/js/custom-theme.js"></script>
     <script src="~/js/rainbowlines.js"></script>
     <script src="~/js/hextiles.js"></script>
-    
+
 </head>
 <body>
     <app>
@@ -45,14 +60,21 @@
     <script type="blazor-boot">
     </script>
 
-    <!-- Monaco Editor --><script src="monaco-editor/min/vs/loader.js"></script>
-    <!-- Monaco Editor --><script>require.config({ paths: { 'vs': 'monaco-editor/min/vs' } });</script>
-    <!-- Monaco Editor --><script src="monaco-editor/min/vs/editor/editor.main.js"></script>
-    <!-- Monaco Editor --><script src="_content/BlazorMonaco/jsInterop.js"></script>
+    <!-- Monaco Editor -->
+    <script src="monaco-editor/min/vs/loader.js"></script>
+    <!-- Monaco Editor -->
+    <script>require.config({ paths: { 'vs': 'monaco-editor/min/vs' } });</script>
+    <!-- Monaco Editor -->
+    <script src="monaco-editor/min/vs/editor/editor.main.js"></script>
+    <!-- Monaco Editor -->
+    <script src="_content/BlazorMonaco/jsInterop.js"></script>
 
-    <!-- JQuery --><script src="~/js/jquery-3.3.1.min.js"></script>
-    <!-- Popper --><script src="~/js/popper.min.js"></script>
-    <!-- Bootstrap --><script src="~/js/bootstrap.bundle.min.js"></script>
+    <!-- JQuery -->
+    <script src="~/js/jquery-3.3.1.min.js"></script>
+    <!-- Popper -->
+    <script src="~/js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="~/js/bootstrap.bundle.min.js"></script>
 
     <div id="blazor-error-ui">
         <environment include="Staging,Production">
@@ -66,5 +88,6 @@
     </div>
 
     <script src="_framework/blazor.server.js"></script>
+    <script>navigator.serviceWorker.register('service-worker.js');</script>
 </body>
 </html>

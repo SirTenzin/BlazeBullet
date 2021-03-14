@@ -1,5 +1,29 @@
 ![Logo](https://i.imgur.com/sToEkJC.png)
 
+# BlazeBullet - A Modded Client for OpenBullet 2
+
+Welcome to the home of BlazeBullet
+
+## Features
+
+  Added PWA
+  Removed ElectronNET
+  Removed Electron Shell
+
+## Installation and Usage
+
+```
+Step 1. Install the latest build
+Step 2. Run OpenBullet2 as usual
+Step 3. Install the PWA in the URL bar (one time)
+Step 4. Enjoy!
+```
+
+Please consider donating to me or Ruri (below)
+
+[CashApp](https://cash.app/$SirTenzin)
+
+# Original README.md
 OpenBullet 2 is a cross platform automation suite powered by .NET core. It allows to perform requests towards a target webapp and offers a lot of tools to work with the results. This software can be used for **scraping** and **parsing data**, automated **pentesting** and much more.
 
 Link to the [Official Forum](https://discourse.openbullet.dev/) where you can find guides and become part of the community behind OpenBullet.
